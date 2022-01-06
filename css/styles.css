@@ -51,7 +51,7 @@ footer {
     background-image: linear-gradient(to bottom right, #FE53BB, #09FBD3, #7fff00);
     border-radius: 0 0 15px 15px;
 }
-.footer-box {
+#footer-box {
     padding: 5px;
     text-align: center;
 }
