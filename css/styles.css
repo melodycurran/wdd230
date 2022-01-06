@@ -1,12 +1,56 @@
 
-@import url('https://fonts.googleapis.com/css?family=Vujahday Script|Lato');
+@import url('https://fonts.googleapis.com/css?family=Vujahday Script|Lato|Luxurious Roman');
 
-#content {
-    max-width: 960px;
+#content{
+    max-width: 760px;
     margin: 0 auto;
+    box-shadow: 2px 5px 5px 5px #666;
+    border-radius: 15px;
 }
-
+body {
+    color: #264653;
+}
 img {
-    max-width: 100%;
+    max-width: 50%;
+    border-radius: 50%;
+    grid-column: 1;
+    justify-self: center;
+    padding: 15px;
 }
-
+.header-box {
+    background-color: #E9C46A;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    border-radius: 15px 15px 0 0;
+}  
+h1 {
+    font-family: 'Vujahday Script', serif;
+    grid-column: 2;
+    align-self: center;
+    font-size: 3em;
+}
+h2 {
+    font-family: 'Luxurious Roman', serif;
+}
+main {
+    text-align: center;
+}
+ul, p {
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+}
+ul {
+    font-size: 1.25em;
+}
+footer {
+    background-color: #E9C46A;
+    border-radius: 0 0 15px 15px;
+}
+.footer-box {
+    padding: 5px;
+    text-align: center;
+}
+.update-text {
+    color: #2A9D8F;
+    font-weight: bold;
+}
