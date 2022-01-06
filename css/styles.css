@@ -11,10 +11,9 @@ body {
     color: #264653;
 }
 img {
-    max-width: 100%;
+    max-width: 50%;
     border-radius: 50%;
     grid-column: 1;
-    grid-template-rows: 1;
     justify-self: center;
 }
 .header-box {
