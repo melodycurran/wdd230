@@ -11,17 +11,18 @@ body {
     color: #264653;
 }
 img {
-    max-width: 50%;
+    max-width: 100%;
     border-radius: 50%;
     grid-column: 1;
+    grid-template-rows: 1;
     justify-self: center;
-    padding: 15px;
 }
 .header-box {
     background-color: #E9C46A;
     display: grid;
     grid-template-columns: 45% 55%;
     border-radius: 15px 15px 0 0;
+    padding: 15px;
 }  
 h1 {
     font-family: 'Vujahday Script', serif;
