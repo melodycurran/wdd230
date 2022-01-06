@@ -54,3 +54,8 @@ footer {
     color: #2A9D8F;
     font-weight: bold;
 }
+@media only screen and (min-width: 768px) {
+    img, h1 {
+        width: 100%;
+    }
+}
