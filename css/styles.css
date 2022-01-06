@@ -58,4 +58,7 @@ footer {
     img, h1 {
         width: 100%;
     }
+    .header-box {
+        padding: 15px;
+    }
 }
