@@ -1,10 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css?family=Vujahday Script|Lato|Luxurious Roman');
+@import url('https://fonts.googleapis.com/css?family=Satisfy|Lato|Luxurious Roman');
 
 #content{
     max-width: 760px;
     margin: 0 auto;
-    box-shadow: 2px 5px 5px 5px #666;
+    box-shadow: 2px 3px 3px 3px #666;
     border-radius: 15px;
 }
 body {
@@ -13,19 +13,22 @@ body {
 img {
     max-width: 50%;
     border-radius: 50%;
+    border: solid 5px #FEDF00;
+    box-shadow: 2px 3px 3px #666;
     grid-column: 1;
     justify-self: center;
     align-self: center;
 }
 .header-box {
     background-color: #E9C46A;
+    background-image: linear-gradient(to bottom right, #F5D300, #FE53BB, #09FBD3, #08F7FE);
     display: grid;
     grid-template-columns: 45% 55%;
     border-radius: 15px 15px 0 0;
     padding: 15px;
 }  
 h1 {
-    font-family: 'Vujahday Script', serif;
+    font-family: 'Satisfy', serif;
     grid-column: 2;
     align-self: center;
     font-size: 3em;
@@ -45,6 +48,7 @@ ul {
 }
 footer {
     background-color: #E9C46A;
+    background-image: linear-gradient(to bottom right, #FE53BB, #09FBD3, #7fff00);
     border-radius: 0 0 15px 15px;
 }
 .footer-box {
@@ -54,6 +58,7 @@ footer {
 .update-text {
     color: #2A9D8F;
     font-weight: bold;
+    padding-bottom: 20px;
 }
 @media only screen and (min-width: 768px) {
     h1 {
