@@ -15,6 +15,7 @@ img {
     border-radius: 50%;
     grid-column: 1;
     justify-self: center;
+    align-self: center;
 }
 .header-box {
     background-color: #E9C46A;
