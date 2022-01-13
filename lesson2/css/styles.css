@@ -72,3 +72,43 @@ header a:link {
 header a:hover {
     color: gray;
 }
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    .visual-hierarchy {
+        grid-column: 1 / 2;
+    }
+    .fitts-law {
+        grid-column: 2 / 3;
+    }
+    .rule-of-thirds {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 400px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    .visual-hierarchy {
+        grid-column: 1 / 2;
+    }
+    .fitts-law {
+        grid-column: 1 / 2;
+    }
+    .rule-of-thirds {
+        grid-column: 1 / 2;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
