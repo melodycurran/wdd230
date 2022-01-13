@@ -58,11 +58,9 @@ footer {
     font-weight: bold;
     padding-bottom: 20px;
 }
-@media only screen and (min-width: 768px) {
-    h1 {
-        width: 100%;
-    }
+@media only screen and (min-width: 400px) and (max-width: 720px) {
     .header-box {
-        padding: 15px;
+        display: block;
+        text-align: center;
     }
 }
