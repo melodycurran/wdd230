@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css?family=Satisfy|Lato|Luxurious Roman');
-
 #content{
     max-width: 760px;
     margin: 0 auto;
@@ -28,13 +26,13 @@ img {
     padding: 15px;
 }  
 h1 {
-    font-family: 'Satisfy', serif;
+    font-family: 'Satisfy', cursive;
     grid-column: 2;
     align-self: center;
     font-size: 3em;
 }
 h2 {
-    font-family: 'Luxurious Roman', serif;
+    font-family: 'Luxurious Roman', cursive;
 }
 main {
     text-align: center;
