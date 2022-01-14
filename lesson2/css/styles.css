@@ -14,8 +14,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     text-align: justify;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding: 1.5em;
 }
 .visual-hierarchy {
     grid-column: 1 / 2;
