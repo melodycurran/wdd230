@@ -4,6 +4,7 @@
     margin: 0 auto;
     box-shadow: 2px 3px 3px 3px #666;
     border-radius: 15px;
+    padding: 1em;
 }
 body {
     color: #264653;
