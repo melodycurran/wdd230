@@ -25,7 +25,7 @@ p, h1, h2, h3, ul, ol, li, img {
 
 
 /*--------Header---------------*/
-header, main {
+header, main, footer {
     background-color: darkslategrey;
     text-align: center;
     padding: 1.5em;
@@ -90,6 +90,7 @@ ul {
 main {
     text-align: left;
 }
+
 
 
 

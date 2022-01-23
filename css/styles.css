@@ -48,10 +48,8 @@ footer {
     background-color: #E9C46A;
     background-image: linear-gradient(to bottom right, #FE53BB, #09FBD3, #7fff00);
     border-radius: 0 0 15px 15px;
-}
-#footer-box {
     padding: 5px;
-    text-align: center;
+    text-align: center; 
 }
 .update-text {
     color: #2A9D8F;
