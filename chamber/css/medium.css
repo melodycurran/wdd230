@@ -1,0 +1,12 @@
+@media only screen and (min-width: 35rem) {
+
+    
+    .footer-content div {
+        margin: 2rem;
+    }
+    .footer-content img {
+        width: 75%;
+    }
+    
+
+}

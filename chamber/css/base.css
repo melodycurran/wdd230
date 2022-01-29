@@ -1,0 +1,128 @@
+/* Css for smaller screen devices */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+p, li, div {
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+/* ------- Navigation ------- */
+nav button {
+    margin: .2rem 2vw;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white
+}
+nav {
+    background-color: #14213D;
+    text-align: center;
+    padding: .2rem;
+}
+#menu-btn {
+    font-size: 20px;
+    align-items: center;
+    padding-right: 10px;
+}
+nav ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: .8rem 2vw;
+    border-top: 1px solid rgba(0,0,0,.3);
+    font-size: large;
+}
+nav ul li.social-media-1 a, nav ul li.social-media-2 a{
+    border-top: none;
+}
+nav ul li.social-media-1 a:hover, nav ul li.social-media-2 a:hover  {
+    background-color: transparent;
+}
+nav ul li a:hover {
+    background-color: #FCA311;
+    color: #000000;
+}
+nav ul {
+    display: none;
+}
+nav ul.open {
+    display: block;
+}
+#now {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: large;
+}
+
+/* ------- Header -------- */
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+}
+.header-content h1 {
+    font-family: 'Noto Serif';
+}
+
+/* ------- Main ------- */
+
+main {
+    margin: .5rem;
+    padding: .1rem;
+}
+main > div {
+    height: 50vh;
+    background-color: #E5E5E5;
+    border: 1px solid #666; 
+    margin-top: 2rem;
+    text-align: center;
+}
+.spotlight {
+    border: 1px solid #666; 
+    height: 20vh;
+    width: 75vw;
+    margin: 0 auto;
+}
+
+
+/* ------- Footer ------- */
+
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #14213D;
+    color: white;
+}
+.footer-content div {
+    font-size: 13px;
+    margin-left: 1rem;
+}
+.base-footer {
+    text-align: center;
+    padding: 1.5rem 2vw;
+    margin: 2rem;
+}
+.footer-content img {
+    margin-right: 1rem;
+}
+.base-footer p {
+    padding: 5px;
+    color: #666;
+}
+

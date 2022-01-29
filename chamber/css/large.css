@@ -1,0 +1,47 @@
+@media only screen and (min-width: 64rem) {
+
+
+    nav button {
+        display: none;
+    }
+    nav ul#primaryNav {
+        display: flex;
+    }
+    nav ul li{
+        align-self: center;
+        flex: 1 1 auto;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(211,211,211,.3);
+        text-align: center;
+        padding: 1rem 2vw;
+    }
+    nav ul li a:hover {
+        padding: 1rem 2vw;
+    }
+    nav ul a {
+        align-self: center;
+    }
+    nav ul li.social-media-1 a, nav ul li.social-media-2 a{
+        border: none;
+        padding: 0;
+    }
+
+    .header-content{
+        padding-left: 0;
+    }
+
+    .base-footer {
+        display: flex;
+        justify-content: center;
+    }
+    .base-footer p {
+        border-right: 1px solid #666;
+        border-left: 1px solid #666;
+    }
+
+
+
+}
