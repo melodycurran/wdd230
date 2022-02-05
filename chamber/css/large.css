@@ -62,5 +62,19 @@
     }
     .join {
         padding: 3rem;
+        box-shadow: 0 0 10px #888;
+    }
+    .join button {
+        display: block;
+        width: 50%;
+        font-size: x-large;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        padding: 1.5rem;
+    }
+    .join button:hover {
+        background-color: #14213D;
+        color: white;
     }
 }
