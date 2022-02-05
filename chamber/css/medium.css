@@ -1,20 +1,23 @@
-@media only screen and (min-width: 35rem) {
 
-    
+/*-----For mediu size screens like tablet or IPad-------*/
+@media only screen and (min-width: 768px) {
+
+    /*-----Footer------*/
     .footer-content div {
         margin: 2rem;
     }
     .footer-content img {
-        width: 75%;
+        max-width: 75%;
     }
     
-    main div section h2 {
-        font-size: xxx-large;
-    }
+    /*-----Main------*/
     .herodiv section {
         position: absolute;
         top: 25%;
         left: 15%;
+    }
+    main div section h2 {
+        font-size: 3rem;
     }
     .spotlightdiv {
         display: flex;
@@ -23,5 +26,13 @@
         align-self: center;
         flex: 1 1 auto;
     }
-
+    .join button {
+        display: block;
+        width: 50%;
+        font-size: x-large;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        padding: 1.5rem;
+    }
 }

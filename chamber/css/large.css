@@ -1,6 +1,8 @@
-@media only screen and (min-width: 64rem) {
 
+/*-----For screens with 1020 px and above----------*/
+@media only screen and (min-width: 1020px) {
 
+    /* -------Navigation--------*/
     nav button {
         display: none;
     }
@@ -11,7 +13,6 @@
         align-self: center;
         flex: 1 1 auto;
     }
-
     nav ul li a {
         border: none;
         border-right: 1px solid rgba(211,211,211,.3);
@@ -21,32 +22,15 @@
     nav ul li a:hover {
         padding: 1rem 2vw;
     }
-    nav ul a {
-        align-self: center;
-    }
+   
     nav ul li.social-media-1 a, nav ul li.social-media-2 a{
         border: none;
         padding: 0;
     }
 
-    .header-content{
-        padding-left: 0;
-    }
-
-    .base-footer {
-        display: flex;
-        justify-content: center;
-    }
-    .base-footer p {
-        border-right: 1px solid #666;
-        border-left: 1px solid #666;
-    }
-    main div section h2 {
-        font-size: 6rem;
-    }
+     /* -------Main--------*/
     main div section button {
         font-size: 2rem;
-        margin: 5rem;
         padding: 1rem;
     }
     main {
@@ -58,23 +42,23 @@
         grid-column: 1 / span 2;
     }
     .news-events {
-        align-self: center;
+        box-shadow: none;
+        background-color: #E5E5E5;
     }
-    .join {
-        padding: 3rem;
-        box-shadow: 0 0 10px #888;
+    
+    .herodiv section {
+        position: absolute;
+        top: 25%;
+        left: 25%;
     }
-    .join button {
-        display: block;
-        width: 50%;
-        font-size: x-large;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 5px;
-        padding: 1.5rem;
+
+    /* -------Footer--------*/
+    .base-footer {
+        display: flex;
+        justify-content: center;
     }
-    .join button:hover {
-        background-color: #14213D;
-        color: white;
+    .base-footer p {
+        border-right: 1px solid #666;
+        border-left: 1px solid #666;
     }
 }
