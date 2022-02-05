@@ -8,5 +8,20 @@
         width: 75%;
     }
     
+    main div section h2 {
+        font-size: xxx-large;
+    }
+    .herodiv section {
+        position: absolute;
+        top: 25%;
+        left: 15%;
+    }
+    .spotlightdiv {
+        display: flex;
+    }
+    .spotlight {
+        align-self: center;
+        flex: 1 1 auto;
+    }
 
 }

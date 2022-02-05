@@ -41,7 +41,26 @@
         border-right: 1px solid #666;
         border-left: 1px solid #666;
     }
-
-
-
+    main div section h2 {
+        font-size: 6rem;
+    }
+    main div section button {
+        font-size: 2rem;
+        margin: 5rem;
+        padding: 1rem;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .herodiv, .join, .spotlightdiv {
+        grid-column: 1 / span 2;
+    }
+    .news-events {
+        align-self: center;
+    }
+    .join {
+        padding: 3rem;
+    }
 }
