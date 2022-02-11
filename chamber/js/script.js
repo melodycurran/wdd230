@@ -17,14 +17,47 @@ document.querySelector('#now').innerHTML = new Intl.DateTimeFormat("en-US", { da
 document.querySelector('#year').innerHTML = new Date().getFullYear();
 document.querySelector('#currentDateandTime').innerHTML = document.lastModified;
 
-// Script for the weather widget
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+// Script for the weather
+let cityName = document.querySelector('.city-name');
+let weather = document.querySelector('.desc');
+let temp = document.querySelector('.temp');
+let tempCels = document.querySelector('.temp-Cels');
+let windSpeed = document.querySelector('.wind-speed');
 
-if(!d.getElementById(id)){js=d.createElement(s);
-    js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
-    fjs.parentNode.insertBefore(js,fjs);
-}}
-(document,'script','weatherwidget-io-js');
+
+fetch('https://api.openweathermap.org/data/2.5/weather?id=' +5660340+ '&appid=caa8540702ef690bc84e562267149524')
+    .then(response => response.json())
+    .then(data => {
+        let nameValue = data['name'];
+        let weatherValue = data['weather'][0]['description'];
+        let tempValue = data['main']['temp'];
+        let tempCelsValue = Math.round(((tempValue - 32) * (5 / 9)) * 100 / 100);
+        let windSpeedValue = data['wind']['speed'];
+
+        document.querySelector('.city-name').innerHTML = nameValue;
+        document.querySelector('.desc').innerHTML = weatherValue.toUpperCase([0]);
+        document.querySelector('.temp').innerHTML = 'Temperature: ' + tempValue + ' &#8457';
+        document.querySelector('.temp-Cels').innerHTML = tempCelsValue + ' &#8451';
+        document.querySelector('.wind-speed').innerHTML = 'Wind Speed: ' + windSpeedValue + ' MPH';
+
+        
+        // Script for Wind Chill
+        if ((tempValue <= 50 || tempCelsValue <= 10) && windSpeedValue > 3) {
+            
+            document.querySelector('.wind-chill').innerHTML = 'Wind Chill: ' + computeWindChill(tempValue, windSpeedValue);
+        }
+
+        function computeWindChill(t, s) {
+            let windChill =  35.74 + .06215 * t - 35.75 * s ** 0.16 + .4275 * t * s ** .16;
+            return Math.round(windChill * 100 / 100);
+        }
+
+    })
+    .catch(function() {
+		// catch any errors
+	});
+
+
 
 // Script for the to display a banner on Mondays or Tuesdays only at the very 
 // top of the page that says "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m." 

@@ -92,7 +92,7 @@ main div section {
     position: absolute;
     top: 10%;
 	left: 13%;
-    color: white;
+    color: rgba(92, 7, 7, 0.788);
     padding: 1.5rem;
 }
 main div button {
@@ -136,6 +136,12 @@ main div.weather h2, main div.spotlightdiv h2, h3, main div.news-events p, main 
     color: white;
     padding: 10px;
 }
+.herodiv section h2 {
+    background-color: rgba(255,255,255,.5);
+}
+.hero-img source{
+    vertical-align: middle;
+}
 
 
 /* ------- Footer ------- */
@@ -177,3 +183,10 @@ main div.weather h2, main div.spotlightdiv h2, h3, main div.news-events p, main 
     font-weight: bolder;
     font-size: x-large;
 }
+
+/* -----Clearfix-------*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
