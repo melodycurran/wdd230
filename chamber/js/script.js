@@ -33,29 +33,20 @@ fetch('https://api.openweathermap.org/data/2.5/weather?id=' +5660340+ '&appid=ca
         let tempValue = data['main']['temp'];
         let tempCelsValue = Math.round(((tempValue - 32) * (5 / 9)) * 100 / 100);
         let windSpeedValue = data['wind']['speed'];
+        let windSpeedValueInKph = Math.round((windSpeedValue * 1.609) * 100 / 100);
 
         document.querySelector('.city-name').innerHTML = nameValue;
         document.querySelector('.desc').innerHTML = weatherValue.toUpperCase([0]);
         document.querySelector('.temp').innerHTML = 'Temperature: ' + tempValue + ' &#8457';
         document.querySelector('.temp-Cels').innerHTML = tempCelsValue + ' &#8451';
         document.querySelector('.wind-speed').innerHTML = 'Wind Speed: ' + windSpeedValue + ' MPH';
-
-        
-        // Script for Wind Chill
-        if ((tempValue <= 50 || tempCelsValue <= 10) && windSpeedValue > 3) {
-            
-            document.querySelector('.wind-chill').innerHTML = 'Wind Chill: ' + computeWindChill(tempValue, windSpeedValue);
-        }
-
-        function computeWindChill(t, s) {
-            let windChill =  35.74 + .06215 * t - 35.75 * s ** 0.16 + .4275 * t * s ** .16;
-            return Math.round(windChill * 100 / 100);
-        }
+        document.querySelector('.kph').innerHTML = ' | ' + windSpeedValueInKph + ' KPH';
 
     })
     .catch(function() {
 		// catch any errors
 	});
+
 
 
 

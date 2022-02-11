@@ -106,6 +106,7 @@ main div button {
 }
 .weather, .spotlightdiv {
     background-color: #E5E5E5; 
+    padding: 2rem;
 }
 main div.weather h2, main div.spotlightdiv h2, h3, main div.news-events p, main div.join p {
     padding: 1rem;
