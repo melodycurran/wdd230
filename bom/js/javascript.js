@@ -10,24 +10,30 @@ const list = document.querySelector('.list');
 // an anonymous function.
 button.addEventListener('click', function() {
   let myBookItems = input.value;
-  input.value = '';
 
-  // create an li element
+
+  //input.value = '';
+
+ 
   const listItem = document.createElement('li');
-
   // I'm not sure why I need this but when I removed it
   // my code stopped working so I just let it there
+
   const listText = document.createElement('span');
 
   // create a delete button
   const listBtn = document.createElement('button');
 
-  listItem.appendChild(listText);
+  //listItem.appendChild(listText);
 
   // populate the li elements 
   // textContent or innerHTML with the input
-  listText.textContent = myBookItems;
-  listItem.appendChild(listBtn);
+  if (input == input.value) {
+    // create an li element
+    listText.textContent = myBookItems;
+    listItem.appendChild(listBtn);
+ }
+
 
   // populate the button textContent with an ❌
   listBtn.textContent = 'X';
@@ -37,7 +43,7 @@ button.addEventListener('click', function() {
 
   // append the list element with the li element just 
   // created and appended with text and the delete button
-  list.append(listItem);
+  // list.append(listItem);
 
   // add an event listener to the delete button that 
   // removes the li element when clicked
