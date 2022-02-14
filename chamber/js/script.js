@@ -40,11 +40,8 @@ fetch('https://api.openweathermap.org/data/2.5/weather?id=' +5660340+ '&appid=ca
         document.querySelector('.wind-speed').innerHTML = 'Wind Speed: ' + windSpeedValue + ' MPH';
         document.querySelector('.kph').innerHTML = ' | ' + windSpeedValueInKph + ' KPH';
 
-    })
-    .catch(function() {
-		alert('An error occurred.')
-	});
-
+    });
+  
 
 
 
