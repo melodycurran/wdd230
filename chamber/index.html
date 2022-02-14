@@ -30,7 +30,7 @@
 <header>
     <div class="header-content">
         <picture>
-            <img src="images\kalispell-chamber-of-commerce-logo.webp" alt="logo">
+            <img src="images/kalispell-chamber-of-commerce-logo.webp" alt="logo">
         </picture>
         <section>
             <h1>Chamber of Commerce</h1>
@@ -50,8 +50,9 @@
         <button id="hamburgerBtn"><span id="menu-btn">MENU </span>&#9776;</button>
 
         <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Community & Visiting</a></li>
+            <li><a href="discover.html">Discover</a></li>
             <li><a href="#">Programs</a></li>
             <li><a href="#">Calendar</a></li>
         </ul>
@@ -63,57 +64,55 @@
 
 
 <main>
+        <div class="herodiv">
+            <picture class="hero-img">
+                <source media="(min-width: 800px)" srcset="images/large.webp">
+                <source media="(min-width: 390px)" srcset="images/medium.webp">
+                <img src="images/small.webp" alt="hero-image">
+            </picture>
+            <section>
+                <h2>Welcome to Kalispell</h2>
+                <button class="join-btn">Join the Chamber</button>
+            </section>
+        </div>
 
-    <div class="herodiv">
-        <picture class="hero-img">
-            <source media="(min-width: 800px)" srcset="images\large.webp">
-            <source media="(min-width: 390px)" srcset="images\medium.webp">
-            <img src="images\small.webp">
-        </picture>
-        <section>
-            <h2>Welcome to Kalispell</h2>
-            <button class="join-btn">Join the Chamber</button>
-        </section>
-    </div>
+        <div class="news-events">
+            <h2>News Events</h2>
+            <h3>APPLICATIONS OPEN FOR ARTIST WILDERNESS CONNECTION</h3>
+            <p>
+                KALISPELL, MONTANA - Professional working artists from various disciplines, 
+                media, and styles are invited to apply to the 2022 Artist Wilderness Connection (AWC), 
+                a unique collaborative artist-in-residence program in Montana managed by Hockaday Museum of Art, 
+                Flathead National Forest, Bob Marshall Wilderness Foundation, and Swan Valley Connections.   
+            </p>
+        </div>
 
-    <div class="news-events">
-        <h2>News Events</h2>
-        <h3>APPLICATIONS OPEN FOR ARTIST WILDERNESS CONNECTION</h3>
-        <p>
-            KALISPELL, MONTANA - Professional working artists from various disciplines, 
-            media, and styles are invited to apply to the 2022 Artist Wilderness Connection (AWC), 
-            a unique collaborative artist-in-residence program in Montana managed by Hockaday Museum of Art, 
-            Flathead National Forest, Bob Marshall Wilderness Foundation, and Swan Valley Connections.   
-        </p>
-    </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.png" alt="weather-image" width="100">
+            <h3 class="city-name">Kalispell</h3>
+            <p class="desc"></p>
+            <span class="temp"></span><span> | </span><span class="temp-Cels"></span><br>
+            <span class="wind-speed"></span><span class="kph"></span><br>
+            <span class="wind-chill">Wind Chill: N/A</span><span class="windChillInCel"></span>
+        </div>
 
-    <div class="weather">
-        <h2>Weather</h2>
-        <img src="images/weather.png" alt="weather-image" width="100">
-        <h3 class="city-name"></h3>
-        <p class="desc"></p>
-        <span class="temp"></span><span> | </span><span class="temp-Cels"></span><br>
-        <span class="wind-speed"></span><span class="kph"></span><br>
-        <span class="wind-chill">Wind Chill: N/A</span><span class="windChillInCel"></span>
-        
-    </div>
+        <div class="join">
+            <button>BECOME A MEMBER</button>
+            <P>Hundreds of businesses and professionals get added everyday. Don't be left behind!</P>
+        </div>
 
-    <div class="join">
-        <button>BECOME A MEMBER</button>
-        <P>Hundreds of businesses and professionals get added everyday. Don't be left behind!</P>
-    </div>
-
-    <div class="spotlightdiv">
-        <div class="spotlight">
-            <h2>BUSINESS MATTERS<br> MONTHLY LUNCHEONS</h2>
-            <img src="images/monthly-luncheons.png" alt="kalispell-chamber-luncheon-img">
+        <div class="spotlightdiv">
+            <div class="spotlight">
+                <h2>BUSINESS MATTERS<br> MONTHLY LUNCHEONS</h2>
+                <img src="images/monthly-luncheons.png" alt="kalispell-chamber-luncheon-img">
         </div>
         <div class="spotlight">
             <h2>LEADERSHIP<br> FLATHEAD</h2>
             <img src="images/leadership-flathead.png" alt="kalispell-chamber-leadership-img">
         </div>
-
     </div>
+
 
 
 </main>

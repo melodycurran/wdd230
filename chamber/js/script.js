@@ -18,24 +18,22 @@ document.querySelector('#year').innerHTML = new Date().getFullYear();
 document.querySelector('#currentDateandTime').innerHTML = document.lastModified;
 
 // Script for the weather
-let cityName = document.querySelector('.city-name');
 let weather = document.querySelector('.desc');
 let temp = document.querySelector('.temp');
 let tempCels = document.querySelector('.temp-Cels');
 let windSpeed = document.querySelector('.wind-speed');
 
-
+// Fetching info from the Open Weather API
 fetch('https://api.openweathermap.org/data/2.5/weather?id=' +5660340+ '&appid=caa8540702ef690bc84e562267149524')
     .then(response => response.json())
     .then(data => {
-        let nameValue = data['name'];
+    
         let weatherValue = data['weather'][0]['description'];
         let tempValue = data['main']['temp'];
         let tempCelsValue = Math.round(((tempValue - 32) * (5 / 9)) * 100 / 100);
         let windSpeedValue = data['wind']['speed'];
         let windSpeedValueInKph = Math.round((windSpeedValue * 1.609) * 100 / 100);
 
-        document.querySelector('.city-name').innerHTML = nameValue;
         document.querySelector('.desc').innerHTML = weatherValue.toUpperCase([0]);
         document.querySelector('.temp').innerHTML = 'Temperature: ' + tempValue + ' &#8457';
         document.querySelector('.temp-Cels').innerHTML = tempCelsValue + ' &#8451';
@@ -44,7 +42,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?id=' +5660340+ '&appid=ca
 
     })
     .catch(function() {
-		// catch any errors
+		alert('An error occurred.')
 	});
 
 

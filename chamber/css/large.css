@@ -60,4 +60,44 @@
         border-right: 1px solid #666;
         border-left: 1px solid #666;
     }
+
+    /*----Discovery Page-------*/
+    main.discover {
+        row-gap: 5rem;
+    }
+    .second-discover-article, .fourth-discover-article, .sixth-discover-article, .eighth-discover-article {
+        text-align: right;
+    }
+    .first-discover-article, .third-discover-article, .fifth-discover-article, .seventh-discover-article,
+    .ninth-discover-article {
+        text-align: left;
+    }
+
+   .first-discover-image, .second-discover-article, .third-discover-image,
+   .fifth-discover-image, .ninth-discover-image {
+       grid-column: 1;
+   }
+   .second-discover-article {
+       grid-row: 2;
+   }
+   .second-discover-article, .first-discover-article, .third-discover-article, .fourth-discover-article,
+   .fifth-discover-article, .sixth-discover-article, .seventh-discover-article, .eighth-discover-article,
+   .ninth-discover-article   {
+       align-self: center;
+   }
+   .fourth-discover-article {
+       grid-row: 4;
+   }
+   .first-discover-article, .second-discover-image, .third-discover-article, .fourth-discover-image,
+   .fifth-discover-article, .sixth-discover-image, .eighth-discover-image {
+       grid-column: 2;
+   }
+   .sixth-discover-article {
+       grid-row: 6;
+   }
+   .eighth-discover-article {
+       grid-row: 8;
+   }
+
+
 }

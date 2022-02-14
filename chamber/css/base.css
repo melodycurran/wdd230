@@ -108,7 +108,8 @@ main div button {
     background-color: #E5E5E5; 
     padding: 2rem;
 }
-main div.weather h2, main div.spotlightdiv h2, h3, main div.news-events p, main div.join p {
+main div.weather h2, main div.spotlightdiv h2, h3, main div.news-events p, main div.join p,
+.discover article h2, .discover article p {
     padding: 1rem;
 }
 .join, .news-events {
@@ -190,4 +191,53 @@ main div.weather h2, main div.spotlightdiv h2, h3, main div.news-events p, main 
     content: "";
     display: table;
     clear: both;
-  }
+}
+
+/* -----Lazy Load Effect-------- */
+main.discover picture img[data-src] {
+    opacity: 0;
+    visibility: hidden;
+}
+main.discover picture img{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+/* -----Discover Page Section-------- */
+main.discover {
+    text-align: center;
+}
+main.discover article p{
+    text-align: left;
+}
+.discover h2 {
+    padding-bottom: 2rem;
+}
+.discover-heading {
+    height: 100px;
+    position: relative;
+    background-color: #E5E5E5;
+}
+.discover-heading h2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.discover article {
+    margin: 25px;
+    border: 2px #E5E5E5 solid;
+    border-radius: 10px;
+}
+.discover article h2 a {
+    text-decoration: none;
+    color: #14213D;
+}
+.discover article h2 a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+main.discover picture img{
+    box-shadow: 5px 4px 10px #666;
+}
