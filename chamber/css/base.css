@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
 }
-img {
+img{
     max-width: 100%;
 }
 p, li, div {
@@ -203,41 +203,31 @@ main.discover picture img{
     transition: 1s linear;
 }
 /* -----Discover Page Section-------- */
-main.discover {
+.discover-heading {
+    background-color: #EEEE;
+    text-align: center;
+    padding: 1.5rem;
+}
+.greeting {
+    padding-bottom: 1rem;
+}
+
+/* ----Discover Media Card------ */
+.media-card {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px 2px #888;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+.discover-article {
+    padding: 2rem;
     text-align: center;
 }
-main.discover article p{
-    text-align: left;
+.discover-article p {
+    padding-top: 1rem;
 }
-.discover h2 {
-    padding-bottom: 2rem;
+.media-btn:hover {
+    background-color: gray;
 }
-.discover-heading {
-    height: 100px;
-    position: relative;
-    background-color: #E5E5E5;
-}
-.discover-heading h2 {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-.discover article {
-    margin: 25px;
-    border: 2px #E5E5E5 solid;
-    border-radius: 10px;
-}
-.discover article h2 a {
-    text-decoration: none;
-    color: #14213D;
-}
-.discover article h2 a:hover {
-    color: #666;
-    text-decoration: underline;
-}
-main.discover picture img{
-    box-shadow: 5px 4px 10px #666;
-}
+

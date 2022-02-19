@@ -29,21 +29,48 @@
     }
 
      /* -------Main--------*/
+    main > div {
+        margin-top: 10px;
+    }
     main div section button {
         font-size: 2rem;
         padding: 1rem;
     }
     main {
+        width: 95%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: auto;
         grid-gap: 10px;
+        margin: 0 auto;
+        padding-bottom: 2rem;
     }
-    .herodiv, .join, .spotlightdiv {
-        grid-column: 1 / span 2;
+    .herodiv {
+        grid-column: 2;
     }
     .news-events {
+        grid-column: 1;
+        grid-row: 1;
         box-shadow: none;
         background-color: #E5E5E5;
+    }
+    .weather {
+        grid-column: 3;
+    }
+    .spotlight1 {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+        align-self: center;
+        margin: 1rem;
+    }
+    .spotlight2 {
+        grid-column: 3;
+        text-align: center;
+        align-self: center;
+    }
+    .join {
+        grid-column: 2;
     }
     .herodiv section {
         position: absolute;
@@ -62,42 +89,17 @@
     }
 
     /*----Discovery Page-------*/
-    main.discover {
-        row-gap: 5rem;
+    #discover {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
     }
-    .second-discover-article, .fourth-discover-article, .sixth-discover-article, .eighth-discover-article {
-        text-align: right;
+    .media-card {
+        width: 100%;
+        transition: ease-in-out 0.3s;;
+        transform: scale(0.9);
     }
-    .first-discover-article, .third-discover-article, .fifth-discover-article, .seventh-discover-article,
-    .ninth-discover-article {
-        text-align: left;
+    .media-card:hover {
+        transform: scale(1.02);
     }
-
-   .first-discover-image, .second-discover-article, .third-discover-image,
-   .fifth-discover-image, .ninth-discover-image {
-       grid-column: 1;
-   }
-   .second-discover-article {
-       grid-row: 2;
-   }
-   .second-discover-article, .first-discover-article, .third-discover-article, .fourth-discover-article,
-   .fifth-discover-article, .sixth-discover-article, .seventh-discover-article, .eighth-discover-article,
-   .ninth-discover-article   {
-       align-self: center;
-   }
-   .fourth-discover-article {
-       grid-row: 4;
-   }
-   .first-discover-article, .second-discover-image, .third-discover-article, .fourth-discover-image,
-   .fifth-discover-article, .sixth-discover-image, .eighth-discover-image {
-       grid-column: 2;
-   }
-   .sixth-discover-article {
-       grid-row: 6;
-   }
-   .eighth-discover-article {
-       grid-row: 8;
-   }
-
-
 }

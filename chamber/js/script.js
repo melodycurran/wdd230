@@ -65,3 +65,5 @@ closeBtn.addEventListener('click', function() {
         banner.style.display = "none";
     }
 })
+
+
