@@ -81,7 +81,7 @@ main {
 main > div {
     margin-top: 2rem;
 }
-.news-events, .weather, .join, .spotlightdiv {
+.news-events, .weather, .join, .spotlight1, .spotlight2 {
     text-align: center;
 }
 .herodiv {
@@ -150,16 +150,16 @@ main div.weather h2, main div.spotlightdiv h2, h3, main div.news-events p, main 
 
 
 .footer-content {
-    display: flex;
+    display: block;
     background-color: #14213D;
     color: white;
     padding: 10px;
+    padding-top: 0;
 }
 .footer-content div {
     font-size: 13px;
     text-align: center;
     align-self: center;
-    flex: 1 1 auto;
 }
 .base-footer {
     text-align: center;
