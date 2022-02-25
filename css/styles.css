@@ -33,9 +33,11 @@ h1 {
 }
 h2 {
     font-family: 'Luxurious Roman', cursive;
-}
-main {
     text-align: center;
+}
+main div {
+    padding-left: 20%;
+    text-align: left;;
 }
 ul, p {
     font-family: 'Lato', sans-serif;
