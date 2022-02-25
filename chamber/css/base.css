@@ -10,6 +10,8 @@ img{
 }
 p, li, div {
     font-family: 'Montserrat';
+}
+#home-page p {
     font-weight: bold;
 }
 
@@ -74,7 +76,7 @@ nav ul.open {
 
 /* ------- Main ------- */
 
-main {
+main#home-page {
     margin: .5rem;
     padding: .1rem;
 }
@@ -231,3 +233,82 @@ main.discover picture img{
     background-color: gray;
 }
 
+/* -------Join Page-------- */
+#join-form {
+    padding: 1rem;
+}
+#join-form h2 {
+    text-align: center;
+    font-family: 'Noto Serif';
+    padding: 1rem;
+}
+label.top {
+    display: block;
+    padding-top: 1rem;
+    font-family: 'Montserrat';
+    color: #14213D;
+    font-weight: bolder;
+}
+form label.sbs {
+    display: block;
+    font-size: 1.5rem;
+    padding: .75rem 0;
+    color: #FCA311;
+    font-weight: bolder;
+}
+legend {
+    font-family: 'Montserrat';
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bolder;
+    padding: 0 1rem;
+}
+form fieldset {
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 15px;
+    border: #999 1px solid;
+}
+form label.top input, textarea {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    padding: .50rem 0;
+    border: 1px solid #888;
+    border-radius: 3px;
+}
+form input.submitBtn {
+    width: 90%;
+    max-width: 15rem;
+    padding: 1rem;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+    background-color: red;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+}
+form input.submitBtn:hover {
+    background-color: #FCA311;
+}
+/* -------Validation------- */
+form label.top input:required {
+    border-color: red;
+}
+form label.top input:required:valid {
+    border-color: #888;
+}
+/*------Thank you page------*/
+#thankyou {
+    text-align: center;
+}
+#thankyou h2{
+    font-family: 'Montserrat';
+    padding: 2rem;
+}
+#thankyou p {
+    padding: 0 2rem 4rem 2rem;
+}

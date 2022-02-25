@@ -36,7 +36,7 @@
         font-size: 2rem;
         padding: 1rem;
     }
-    main {
+    #home-page {
         width: 95%;
         display: grid;
         grid-template-columns: 20% 60% 20%;
@@ -100,4 +100,15 @@
     .media-card:hover {
         transform: scale(1.02);
     }
+
+    /*-----Join Page------*/
+    form  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+   form input.submitBtn {
+       grid-column: 2;
+   }
+   
 }
