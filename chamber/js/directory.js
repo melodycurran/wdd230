@@ -1,5 +1,5 @@
 
-const dataURL = 'chamber/js/data.json';
+const dataURL = 'https://melodycurran.github.io/wdd230/chamber/js/data.json';
 const cardDiv = document.querySelector('.directoryCards');
 
 fetch(dataURL)
