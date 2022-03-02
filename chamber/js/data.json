@@ -1,0 +1,96 @@
+{
+    "businesses" : [
+        {
+            "name": "Wonka Industries",
+            "address": "1445 West Norwood Avenue in Itasca, Illinois",
+            "phone": "800-299-6652",
+            "website": "https://movieweb.com/go-inside-wonka-industries/",
+            "imageurl": "chamber/images/wonka-industries.webp"
+        },
+        {
+            "name": "Acme Corp.",
+            "address": "18895 E. Arenth Avenue, City of Industry, CA 91748",
+            "phone": "626-964-3456",
+            "website": "https://www.acmecorp.com/losangeles/",
+            "images": "images/acme-corp.webp"
+        },
+        {
+            "name": "Stark Industries",
+            "address": "1200 Industrial Ave, Long Beach, CA 90803",
+            "phone": "212-970-4133",
+            "website": "https://www.starkindustriescorporation.com/",
+            "images": "chamber/images/stark-industries.webp"
+        },
+        {
+            "name": "Ollivander's Wand Shop",
+            "address": "6000 Universal Blvd Universal Orlando Resort Orlando, FL 32819",
+            "phone": "407-363-8000",
+            "website": "https://www.universalorlando.com/web/en/us/things-to-do/shopping/ollivanders-diagon-alley",
+            "images": "chamber/images/ollivanders-wand-shop.webp"
+        },
+        {
+            "name": "Gekko & Co.",
+            "address": "5201 Mitchelldale St Ste A8 Houston, TX, 77092",
+            "phone": "713-527-9912",
+            "website": "http://www.gekko-inc.com/",
+            "images": "chamber/images/gekko.webp"
+        },
+        {
+            "name": "Wayne Enterprises",
+            "address": "14300 Hollister Street, Suite 100 Houston, Texas 77066",
+            "phone": "713-896-0300",
+            "website": "https://www.wayne-ent.com/more/locations.html",
+            "images": "chamber/images/wayne-industries.webp"
+        },
+        {
+            "name": "Cyberdyne Systems",
+            "address": "234 Renegade Ct, Henderson, Nevada, 89074",
+            "phone": "702-291-2004",
+            "website": "https://cyberdynetechsys.com/",
+            "images": "chamber/images/cyberdyne.webp"
+        },
+        {
+            "name": "Genco Pura Olive Oil Company",
+            "address": "6015 Morrow St E Ste 218 Jacksonville, FL, 32217",
+            "phone": "904-802-7110",
+            "website": "https://godfather.fandom.com/wiki/Genco_Pura_Olive_Oil_Company",
+            "images": "chamber/images/genco-pura.webp"
+        },
+        {
+            "name": "Bubba Gump",
+            "address": "321 W Katella Ave, Suite 101, Anaheim, CA 92802",
+            "phone": "714-635-4867",
+            "website": "https://www.bubbagump.com/",
+            "images": "chamber/images/bubba-gump.webp"
+        },
+        {
+            "name": "Duff Beer",
+            "address": "49 Production Plaza, North Hollywood, CA 91602",
+            "phone": "800-864-8377",
+            "website": "https://www.universalstudioshollywood.com/things-to-do/dining/duff-brewery-beer-garden/",
+            "images": "chamber/images/duff-beer.webp"
+        },
+        {
+            "name": "Olivia Pope & Associates",
+            "address": "1970 K. Street, Washington, D.C., 2006",
+            "phone": "313-890-0097",
+            "website": "https://scandal.fandom.com/wiki/Olivia_Pope_%26_Associates",
+            "images": "chamber/images/olivia-pope.webp"
+        },
+        {
+            "name": "Krusty Krab",
+            "address": "807 Bedell Ave Woodbine, GA 31569",
+            "phone": "715-820-3420",
+            "website": "https://www.yelp.com/biz/krusty-krab-woodbine",
+            "images": "chamber/images/krusty-krab.webp"
+        },
+        {
+            "name": "Soylent",
+            "address": "207 South Broadway Street Los Angeles, CA 90012",
+            "phone": "213-418-0240",
+            "website": "https://soylent.com/",
+            "images": "chamber/images/soylent-green.webp"
+        }
+    ]
+    
+}
