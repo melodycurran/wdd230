@@ -31,7 +31,7 @@ fetch(dataURL)
         image.setAttribute('loading', 'lazy');
 
         website.setAttribute('href', business.website);
-        website.textContent = `Website: ${business.website.setAttribute('href', business.website)}`
+        website.textContent = `Website: ${business.website}`
 
         media_card.appendChild(h2);
         media_card.appendChild(image);
