@@ -20,18 +20,17 @@ fetch(dataURL)
         let image = document.createElement('img');
         let phone = document.createElement('p');
         let address = document.createElement('p');
-        let website = document.createElement('a');
+        let website = document.createElement('p');
 
         h2.textContent = `${business.name}`
         phone.textContent = `Phone number: ${business.phone}`
         address.textContent = `Address: ${business.address}`
+        website.textContent = `Website: ${business.website}`
 
         image.setAttribute('src', business.images);
         image.setAttribute('alt', `Image of ${business.name}`);
         image.setAttribute('loading', 'lazy');
-
-        website.setAttribute('href', business.website);
-        website.textContent = `Website: ${business.website}`
+        
 
         media_card.appendChild(h2);
         media_card.appendChild(image);

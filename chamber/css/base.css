@@ -90,7 +90,7 @@ main > div {
     margin: 10px auto;
     position: relative;
 }
-main div section {
+div.herodiv section {
     position: absolute;
     top: 10%;
 	left: 13%;
@@ -311,4 +311,26 @@ form label.top input:required:valid {
 }
 #thankyou p {
     padding: 0 2rem 4rem 2rem;
+}
+
+/*--------Directory Page--------*/
+.directoryCards section img{
+    width: 75%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.directoryPage {
+    text-align: center;
+}
+.directoryCards section {
+    margin: 3rem;
+    border: 1px solid black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.directoryCards section p, .directoryCards section a {
+    text-align: left;
 }
