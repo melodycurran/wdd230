@@ -1,6 +1,7 @@
 
-const dataURL = 'https://melodycurran.github.io/wdd230/chamber/js/data.json';
-const cardDiv = document.querySelector('.directoryCards');
+const dataURL = 'js/data.json';
+const listDiv = document.querySelector('.list-view');
+const cardDiv = document.querySelector('.grid-view');
 
 fetch(dataURL)
     .then(function(response) {
@@ -10,33 +11,82 @@ fetch(dataURL)
         console.table(jsonObject);
 
         const businesses = jsonObject['businesses'];
-        businesses.forEach(displayBusinesses);
+        businesses.forEach(displayBusinessesInGrid);
+        businesses.forEach(displayBusinessesInList);
     });
 
-    function displayBusinesses(business) {
+    function displayBusinessesInGrid(business) {
 
         let media_card = document.createElement('section');
         let h2 = document.createElement('h2');
         let image = document.createElement('img');
         let phone = document.createElement('p');
         let address = document.createElement('p');
-        let website = document.createElement('p');
+        let website = document.createElement('a');
 
         h2.textContent = `${business.name}`
-        phone.textContent = `Phone number: ${business.phone}`
-        address.textContent = `Address: ${business.address}`
-        website.textContent = `Website: ${business.website}`
+        phone.textContent = `${business.phone}`
+        address.textContent = `${business.address}`
+        website.textContent = `${business.website}`
+
+        website.setAttribute = ('href', business.website);
 
         image.setAttribute('src', business.images);
         image.setAttribute('alt', `Image of ${business.name}`);
         image.setAttribute('loading', 'lazy');
-        
-
+       
         media_card.appendChild(h2);
         media_card.appendChild(image);
         media_card.appendChild(phone);
         media_card.appendChild(address);
         media_card.appendChild(website);
-
+            
         cardDiv.appendChild(media_card);
     }
+
+    function displayBusinessesInList(business) {
+
+        let media_card = document.createElement('section');
+        let h2 = document.createElement('h2');
+        let phone = document.createElement('p');
+        let address = document.createElement('p');
+        let website = document.createElement('p');
+
+        h2.textContent = business.name
+        phone.textContent = business.phone
+        address.textContent = business.address
+        website.textContent = business.website
+        
+       
+        media_card.appendChild(h2);
+        media_card.appendChild(phone);
+        media_card.appendChild(address);
+        media_card.appendChild(website);
+            
+        listDiv.appendChild(media_card);
+    }
+
+let viewsButtons = document.querySelectorAll('.links ul li');
+let views = document.querySelectorAll('.view-div');
+
+viewsButtons.forEach(function(link) {
+    link.addEventListener('click', function() {
+        viewsButtons.forEach(function(item) {
+            item.classList.remove('active');
+        })
+        link.classList.add('active');
+        
+        let li_view = link.getAttribute('data-view');
+
+        views.forEach(function(view) {
+            view.style.display = 'none';
+        })
+        
+        if (li_view == 'grid-view') {
+            document.querySelector('.' + li_view).style.display = 'block';
+        } else {
+            document.querySelector('.' + li_view).style.display = 'block';
+        }
+    })
+
+})
