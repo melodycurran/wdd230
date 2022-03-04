@@ -118,8 +118,12 @@
         display: flex;
         flex: 1 1 auto;
         align-self: center;
-        justify-content: center;
         padding: 2rem 0;
+    }
+    .list-view section h2, 
+    .list-view section p, 
+    .list-view section a {
+        padding: 0 2rem;
     }
    
 }

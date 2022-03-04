@@ -334,16 +334,18 @@ form label.top input:required:valid {
     cursor: pointer;
 }
 /*--------Grid View-------------*/
+.grid-view section {
+    margin: 2rem;
+    box-shadow: #666 3px 4px 6px 3px;
+    padding: 2.5rem 1.5rem;
+    background-color: #14213D;
+    color: #FCA311;
+}
 .grid-view section img{
     display: block;
     width: 50%;
     margin: 0 auto;
-    padding: 1rem;
-}
-.grid-view section {
-    margin: 2rem;
-    box-shadow: #666 3px 4px 6px 3px;
-    padding: 1rem;
+    padding: 2rem;
 }
 .grid-view section p,
 .grid-view section a {
