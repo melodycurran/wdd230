@@ -314,30 +314,6 @@ form label.top input:required:valid {
 }
 
 /*--------Directory Page--------*/
-/*--------Grid View-------------*/
-.grid-view section img{
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    padding: 1rem;
-}
-.grid-view section {
-    margin: 2rem;
-    box-shadow: #666 3px 4px 6px 3px;
-    padding: 1rem;
-}
-.grid-view section p {
-    display: block;
-    text-align: left;
-    font-size: 13px;
-    font-weight: bolder;
-}
-.grid-view section h2, 
-.directoryPage h1 {
-    text-align: center;
-}
 .directoryPage h1 {
     font-family: 'Montserrat';
 }
@@ -357,7 +333,27 @@ form label.top input:required:valid {
     border-radius: 5px;
     cursor: pointer;
 }
-
+/*--------Grid View-------------*/
+.grid-view section img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.grid-view section {
+    margin: 2rem;
+    box-shadow: #666 3px 4px 6px 3px;
+    padding: 1rem;
+}
+.grid-view section p,
+.grid-view section a {
+    font-size: 13px;
+    font-weight: bolder;
+}
+.grid-view section h2, 
+.directoryPage h1 {
+    text-align: center;
+}
 /*-----------List View------------*/
 .list-view section {
     padding: 1rem;

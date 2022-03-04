@@ -83,14 +83,6 @@
             "phone": "715-820-3420",
             "website": "https://www.yelp.com/biz/krusty-krab-woodbine",
             "images": "images/krusty-krab.webp"
-        },
-        {
-            "name": "Wonka Industries",
-            "address": "1445 West Norwood Avenue in Itasca, Illinois",
-            "phone": "800-299-6652",
-            "website": "https://movieweb.com/go-inside-wonka-industries/",
-            "imageurl": "images/new-image-for-wonka.webp"
         }
     ]
-    
 }

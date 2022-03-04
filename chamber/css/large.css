@@ -110,5 +110,16 @@
    form input.submitBtn {
        grid-column: 2;
    }
+   /*------Directory Page-------*/
+   .grid-view {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    .list-view section {
+        display: flex;
+        flex: 1 1 auto;
+        align-self: center;
+        justify-content: center;
+        padding: 2rem 0;
+    }
    
 }

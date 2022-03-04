@@ -1,5 +1,5 @@
 
-const dataURL = 'js/data.json';
+const dataURL = 'https://melodycurran.github.io/wdd230/chamber/js/data.json';
 const listDiv = document.querySelector('.list-view');
 const cardDiv = document.querySelector('.grid-view');
 
@@ -83,7 +83,7 @@ viewsButtons.forEach(function(link) {
         })
         
         if (li_view == 'grid-view') {
-            document.querySelector('.' + li_view).style.display = 'block';
+            document.querySelector('.' + li_view).style.display = 'grid';
         } else {
             document.querySelector('.' + li_view).style.display = 'block';
         }

@@ -20,7 +20,7 @@
         top: 25%;
         left: 15%;
     }
-    main div section h2 {
+    .herodiv section h2 {
         font-size: 3rem;
     }
     .spotlightdiv {
@@ -58,5 +58,9 @@
     #thankyou {
         height: 50vh;
         padding-top: 5%;
+    }
+    /*-------Directory Page---------*/
+    .grid-view {
+        grid-template-columns: 1fr 1fr;
     }
 }
