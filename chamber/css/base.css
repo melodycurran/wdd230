@@ -1,6 +1,6 @@
+
+
 /* Css for smaller screen devices */
-
-
 * {
     margin: 0;
     padding: 0;
@@ -14,8 +14,6 @@ p, li, div {
 #home-page p {
     font-weight: bold;
 }
-
-
 /* ------- Navigation ------- */
 nav button {
     margin: .2rem 2vw;
@@ -61,9 +59,7 @@ nav ul.open {
     padding: 1.5rem;
     font-size: large;
 }
-
 /* ------- Header -------- */
-
 .header-content{
     display: flex;
     align-items: center;
@@ -73,9 +69,7 @@ nav ul.open {
 .header-content h1 {
     font-family: 'Noto Serif';
 }
-
 /* ------- Main ------- */
-
 main#home-page {
     margin: .5rem;
     padding: .1rem;
@@ -146,11 +140,7 @@ main div.weather h2, main div.spotlightdiv h2, h3, main div.news-events p, main 
 .hero-img source{
     vertical-align: middle;
 }
-
-
 /* ------- Footer ------- */
-
-
 .footer-content {
     display: block;
     background-color: #14213D;
@@ -172,7 +162,6 @@ main div.weather h2, main div.spotlightdiv h2, h3, main div.news-events p, main 
     padding: 5px;
     color: #666;
 }
-
 /*----Top-page banner----*/
 #top-page-banner {
     text-align: center;
@@ -187,14 +176,12 @@ main div.weather h2, main div.spotlightdiv h2, h3, main div.news-events p, main 
     font-weight: bolder;
     font-size: x-large;
 }
-
 /* -----Clearfix-------*/
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
-
 /* -----Lazy Load Effect-------- */
 main.discover picture img[data-src] {
     opacity: 0;
@@ -213,7 +200,6 @@ main.discover picture img{
 .greeting {
     padding-bottom: 1rem;
 }
-
 /* ----Discover Media Card------ */
 .media-card {
     width: 100%;
@@ -232,10 +218,9 @@ main.discover picture img{
 .media-btn:hover {
     background-color: gray;
 }
-
 /* -------Join Page-------- */
 #join-form {
-    padding: 1rem;
+    padding: 1rem 1rem;
 }
 #join-form h2 {
     text-align: center;
@@ -261,7 +246,7 @@ legend {
     font-size: 1.25rem;
     text-align: center;
     font-weight: bolder;
-    padding: 0 1rem;
+    padding: 0 .5rem;
 }
 form fieldset {
     margin: 2rem 0;
@@ -312,11 +297,19 @@ form label.top input:required:valid {
 #thankyou p {
     padding: 0 2rem 4rem 2rem;
 }
-
 /*--------Directory Page--------*/
-.directoryPage h1 {
+.directoryPage h2.dirHeading {
     font-family: 'Montserrat';
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #EEEE;
+    margin-bottom: 3rem;
 }
+.list-view section h2, .grid-view section h2 {
+    font-family: 'Noto Serif';
+    text-align: center;
+}
+/*--------Directory Page buttons----------*/
 .links ul {
     display: flex;
     justify-content: center;
@@ -335,11 +328,11 @@ form label.top input:required:valid {
 }
 /*--------Grid View-------------*/
 .grid-view section {
-    margin: 2rem;
-    box-shadow: #666 3px 4px 6px 3px;
+    margin: 1rem;
     padding: 2.5rem 1.5rem;
-    background-color: #14213D;
-    color: #FCA311;
+    border-radius: 1rem;
+    border: #888 1px solid;
+    color: #14213D;
 }
 .grid-view section img{
     display: block;
@@ -347,29 +340,25 @@ form label.top input:required:valid {
     margin: 0 auto;
     padding: 2rem;
 }
+.grid-view section hr {
+    margin-bottom: 1.5rem;
+}
 .grid-view section p,
 .grid-view section a {
     font-size: 13px;
     font-weight: bolder;
-}
-.grid-view section h2, 
-.directoryPage h1 {
-    text-align: center;
+    padding: 5px 0;
 }
 /*-----------List View------------*/
 .list-view section {
     padding: 1rem;
     color: #14213D;
-    padding-left: 2rem;
     margin: 0 .5rem;
-}
-.list-view section:nth-last-of-type(odd) {
-    background-color: #14213D;
-    color: white;
+    font-weight: bold;
+    font-size: 13px;
 }
 .list-view section:nth-last-of-type(even) {
-    background-color: rgba(252,163,17, .7);
-    font-weight: bold;
+    background-color: rgba(252,163,17, .5);
 }
 .list-view section p {
     padding: 3px;

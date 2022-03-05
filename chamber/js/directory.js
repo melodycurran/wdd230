@@ -4,10 +4,10 @@ const listDiv = document.querySelector('.list-view');
 const cardDiv = document.querySelector('.grid-view');
 
 fetch(dataURL)
-    .then(function(response) {
+    .then((response) => {
         return response.json();
     })
-    .then(function(jsonObject) {
+    .then((jsonObject) => {
         console.table(jsonObject);
 
         const businesses = jsonObject['businesses'];
@@ -20,6 +20,7 @@ fetch(dataURL)
         let media_card = document.createElement('section');
         let h2 = document.createElement('h2');
         let image = document.createElement('img');
+        let hr = document.createElement('hr');
         let phone = document.createElement('p');
         let address = document.createElement('p');
         let website = document.createElement('a');
@@ -28,15 +29,15 @@ fetch(dataURL)
         phone.textContent = `${business.phone}`
         address.textContent = `${business.address}`
         website.textContent = `${business.website}`
-
-        website.setAttribute = ('href', business.website);
-
-        image.setAttribute('src', business.images);
-        image.setAttribute('alt', `Image of ${business.name}`);
-        image.setAttribute('loading', 'lazy');
+        
+        website.setAttribute("href", business.website);
+        image.setAttribute("src", business.images);
+        image.setAttribute("alt", `Image of ${business.name}`);
+        image.setAttribute("loading", "lazy");
        
         media_card.appendChild(h2);
         media_card.appendChild(image);
+        media_card.appendChild(hr);
         media_card.appendChild(phone);
         media_card.appendChild(address);
         media_card.appendChild(website);
@@ -66,19 +67,20 @@ fetch(dataURL)
         listDiv.appendChild(media_card);
     }
 
+// Script for Grid and List Views
 let viewsButtons = document.querySelectorAll('.links ul li');
 let views = document.querySelectorAll('.view-div');
 
-viewsButtons.forEach(function(link) {
-    link.addEventListener('click', function() {
-        viewsButtons.forEach(function(item) {
+viewsButtons.forEach((link) => {
+    link.addEventListener('click', () => {
+        viewsButtons.forEach((item) => {
             item.classList.remove('active');
         })
         link.classList.add('active');
         
         let li_view = link.getAttribute('data-view');
 
-        views.forEach(function(view) {
+        views.forEach((view) => {
             view.style.display = 'none';
         })
         

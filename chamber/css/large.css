@@ -104,8 +104,9 @@
     /*-----Join Page------*/
     form  {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
         grid-gap: 2rem;
+        padding: 0 4rem;
     }
    form input.submitBtn {
        grid-column: 2;
@@ -114,16 +115,20 @@
    .grid-view {
     grid-template-columns: 1fr 1fr 1fr;
     }
-    .list-view section {
+    .list-view section{
         display: flex;
-        flex: 1 1 auto;
-        align-self: center;
         padding: 2rem 0;
     }
     .list-view section h2, 
     .list-view section p, 
     .list-view section a {
         padding: 0 2rem;
+    }
+    .list-view section h2 {
+        width: 15%;
+    }
+    .list-view section p {
+        width: 15%;
     }
    
 }
