@@ -1,13 +1,13 @@
 // Script for Weather and Wind Chill **I removed the previous codes and added new ones based on what I learned in Week 10 lesson
 
-apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5660340&appid=caa8540702ef690bc84e562267149524&units=imperial'
+apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5660340&appid=caa8540702ef690bc84e562267149524&units=imperial';
 
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsonObject) => {
         console.log(jsonObject);
 
-        const iconURL = `https://openweathermap.org/img/w/${jsonObject.weather[0].icon}.png`
+        const iconURL = `https://openweathermap.org/img/w/${jsonObject.weather[0].icon}.png`;
 
         let temp = jsonObject.main.temp;
         let speed = jsonObject.wind.speed;
