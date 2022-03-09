@@ -69,7 +69,7 @@ nav ul.open {
 .header-content h1 {
     font-family: 'Noto Serif';
 }
-/* ------- Main ------- */
+/* ------- Homepage ------- */
 main#home-page {
     margin: .5rem;
     padding: .1rem;
@@ -140,6 +140,27 @@ main div.weather h2, main div.spotlightdiv h2, h3, main div.news-events p, main 
 .hero-img source{
     vertical-align: middle;
 }
+/* -------Weather--------*/
+.weather {
+    position: relative;
+    height: 30vh;
+}
+.weatherInfo {
+    position: absolute;
+    right: 10%;
+    bottom: 25%;
+    text-align: left;
+}
+.weather figure {
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+}
+#weatherIcon {
+    width: 100%;
+}
+
+
 /* ------- Footer ------- */
 .footer-content {
     display: block;

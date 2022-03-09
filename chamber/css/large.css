@@ -54,9 +54,6 @@
         box-shadow: none;
         background-color: #E5E5E5;
     }
-    .weather {
-        grid-column: 3;
-    }
     .spotlight1 {
         grid-column: 1;
         grid-row: 2;
@@ -75,6 +72,23 @@
         top: 25%;
         left: 25%;
     }
+    /*--------Weather---------*/
+    .weather {
+        display: block;
+        height: inherit;
+    }
+    .weatherInfo, .weather figure {
+        position: static;
+        text-align: center;
+    }
+    #weatherIcon {
+        width: 40%;
+    }
+    .weather h2 {
+        background-color: #14213D;
+        color: white;
+    }
+
 
     /* -------Footer--------*/
     .base-footer {

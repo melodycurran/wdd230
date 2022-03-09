@@ -1,6 +1,14 @@
-
+@media only screen and (min-width: 640px) {
+   
+    .weatherInfo {
+        right: 10%;
+    }
+    .weather figure {
+        left: 20%;
+    }
+}
 /*-----For mediu size screens like tablet or IPad-------*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
 
     /*-----Footer------*/
     .footer-content {
@@ -38,6 +46,16 @@
         margin-right: auto;
         border-radius: 5px;
         padding: 1.5rem;
+    }
+    /* -------Weather--------*/
+    .weather {
+        height: 20vh;
+    }
+    .weatherInfo {
+        right: 30%;
+    }
+    .weather figure {
+        left: 30%;
     }
     /*----Discovery Page-----*/
     .media-card {
