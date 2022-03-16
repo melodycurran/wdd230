@@ -18,6 +18,7 @@ fetch(apiURL)
         document.querySelector('#weatherIcon').setAttribute('alt', jsonObject.weather[0].description);
         document.querySelector('.temp').innerHTML = `Temperature: ${temp} &deg;F`;
         document.querySelector('.wind-speed').textContent = `Wind Speed: ${speed} mph`;
+        document.querySelector('.humidityDiv').textContent = `Humidity: ${jsonObject.main.humidity}`;
 
         let windChill = computeWindChill(temp, speed);
 

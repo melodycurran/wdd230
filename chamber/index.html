@@ -66,13 +66,14 @@
 <main id="home-page">
         <div class="herodiv">
             <picture class="hero-img">
-                <source media="(min-width: 800px)" srcset="images/large.webp">
-                <source media="(min-width: 390px)" srcset="images/medium.webp">
-                <img src="images/small.webp" alt="hero-image">
+                <source media="(min-width: 800px)" srcset="images/hero-img-large.webp">
+                <source media="(min-width: 390px)" srcset="images/hero-img-medium.webp">
+                <img src="images/hero-img-small.webp" alt="hero-image">
             </picture>
             <section>
-                <h2>Welcome to Kalispell</h2>
-                <button class="join-btn" onclick="window.location.href='join.html';">Join the Chamber</button>
+                <h2>Growth Summit 2022</h2>
+                <p>Vibrant Downtown, Housing, Public Safety and more - Register Today!</p>
+                <button class="join-btn" onclick="window.location.href='join.html';">Join Summit</button>
             </section>
         </div>
 
@@ -90,6 +91,7 @@
             <figure><img src="" alt="" id="weatherIcon"><figcaption></figcaption></figure>
 
             <section class="weatherInfo">
+                <p class="humidityDiv"></p>
                 <p class="temp"></p>
                 <p class="wind-speed"></p>
                 <p class="wind-chill"></p>
@@ -101,17 +103,8 @@
             <P>Hundreds of businesses and professionals get added everyday. Don't be left behind!</P>
         </div>
 
-            <div class="spotlight1">
-                <h2>BUSINESS MATTERS<br> MONTHLY LUNCHEONS</h2>
-                <img src="images/monthly-luncheons.png" alt="kalispell-chamber-luncheon-img">
-        </div>
-        <div class="spotlight2">
-            <h2>LEADERSHIP<br> FLATHEAD</h2>
-            <img src="images/leadership-flathead.png" alt="kalispell-chamber-leadership-img">
-        </div>
-   
-
-
+        <div class="spotlight1"></div>
+        <div class="spotlight2"></div>
 
 </main>
 
@@ -146,6 +139,7 @@
 
 <script src="js/script.js"></script>
 <script src="js/windChill.js"></script>
+<script src="js/spotlights.js"></script>
 
 </body>
 </html>

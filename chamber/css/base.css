@@ -73,6 +73,7 @@ nav ul.open {
 main#home-page {
     margin: .5rem;
     padding: .1rem;
+    margin: 0 auto;
 }
 main > div {
     margin-top: 2rem;
@@ -80,31 +81,46 @@ main > div {
 .news-events, .weather, .join, .spotlight1, .spotlight2 {
     text-align: center;
 }
+.spotlight1 section, .spotlight2 section {
+    margin-bottom: 2rem;
+    border-bottom: #666 solid 2px;
+    padding: 1rem;
+}
+.spotlight1 section:last-child, .spotlight2 section:last-child {
+    border: none;
+}
 .herodiv {
     margin: 10px auto;
     position: relative;
 }
 div.herodiv section {
     position: absolute;
-    top: 10%;
-	left: 13%;
-    color: rgba(92, 7, 7, 0.788);
+    top: 5%;
+	left: 5%;
+    right: 5%;
     padding: 1.5rem;
+    color: rgba(92, 7, 7, 0.788);
+    background-color: rgba(255,255,255,.3);
 }
 main div button {
+    color: #14213D;
     padding: .5rem;
     margin-top: 1rem;
     font-weight: bolder;
-    background-color: #FCA311;
-    border: none;
+    background-color: transparent;
+    border: 3px solid #FCA311;
     box-shadow: 0 0 10px #E5E5E5;
-    border-radius: 2px;
+    border-radius: 10px;
 }
-.weather, .spotlightdiv {
+main div button:hover {
+    background-color: #FCA311;
+    color: #14213D;
+}
+.weather {
     background-color: #E5E5E5; 
     padding: 2rem;
 }
-main div.weather h2, main div.spotlightdiv h2, h3, main div.news-events p, main div.join p,
+main div.weather h2, h3, main div.news-events p, main div.join p,
 .discover article h2, .discover article p {
     padding: 1rem;
 }
@@ -112,12 +128,11 @@ main div.weather h2, main div.spotlightdiv h2, h3, main div.news-events p, main 
     padding: 3rem;
     box-shadow: 0 0 10px #888;
 }
-.spotlight {
-    margin: 2rem;
-    box-shadow: 0 0 10px #888;
-} 
 .join button {
     display: block;
+    color: #14213D;
+    border: none;
+    background-color: #FCA311;
     width: 100%;
     font-size: large;
     margin-left: auto;
@@ -135,7 +150,7 @@ main div.weather h2, main div.spotlightdiv h2, h3, main div.news-events p, main 
     padding: 10px;
 }
 .herodiv section h2 {
-    background-color: rgba(255,255,255,.5);
+    margin-bottom: 1rem;
 }
 .hero-img source{
     vertical-align: middle;

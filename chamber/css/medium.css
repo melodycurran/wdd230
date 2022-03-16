@@ -24,11 +24,6 @@
     }
     
     /*-----Main------*/
-    .herodiv section {
-        position: absolute;
-        top: 25%;
-        left: 15%;
-    }
     .herodiv section h2 {
         font-size: 3rem;
     }
