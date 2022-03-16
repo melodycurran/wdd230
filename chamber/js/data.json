@@ -1,53 +1,53 @@
 {
     "businesses" : [
         {
-            "name": "Soylent",
-            "address": "207 South Broadway Street Los Angeles, CA 90012",
-            "phone": "213-418-0240",
-            "website": "https://soylent.com/",
-            "images": "images/soylent-green.webp"
+            "name": "KELLER WILLIAMS REALTY NW MONTANA",
+            "address": "1830 3rd Ave East Suite 102, Kalispell MT 59901",
+            "phone": "406-471-0524",
+            "website": "https://landscapesrealty.com/",
+            "images": "images/keller-williams-logo.webp"
         },
         {
-            "name": "Acme Corp.",
-            "address": "18895 E. Arenth Avenue, City of Industry, CA 91748",
-            "phone": "626-964-3456",
-            "website": "https://www.acmecorp.com/losangeles/",
-            "images": "images/acme-corp.webp"
+            "name": "PNPA | TRADEWERKS INC",
+            "address": "120 1st Ave. West, Kalispell MT 59901",
+            "phone": "406-253-5328",
+            "website": "https://tradewerks.com/",
+            "images": "images/pnpa.webp"
         },
         {
-            "name": "Stark Industries",
-            "address": "1200 Industrial Ave, Long Beach, CA 90803",
-            "phone": "212-970-4133",
-            "website": "https://www.starkindustriescorporation.com/",
-            "images": "images/stark-industries.webp"
+            "name": "RIDDLE'S JEWELRY",
+            "address": "2244 US 93 North Ste 102 , Kalispell MT 59901",
+            "phone": "406-755-8400",
+            "website": "https://www.riddlesjewelry.com/",
+            "images": "images/riddleslogo.webp"
         },
         {
-            "name": "Ollivander's Wand Shop",
-            "address": "6000 Universal Blvd Universal Orlando Resort Orlando, FL 32819",
-            "phone": "407-363-8000",
-            "website": "https://www.universal-orlando.com/",
-            "images": "images/ollivanders-wand-shop.webp"
+            "name": "MY GLACIER VILLAGE",
+            "address": "1103 S Main St Kalispell, MT 59901",
+            "phone": "406-250-8784",
+            "website": "https://www.myglaciervillage.com/",
+            "images": "images/helpful-village.webp"
         },
         {
-            "name": "Gekko & Co.",
-            "address": "5201 Mitchelldale St Ste A8 Houston, TX, 77092",
-            "phone": "713-527-9912",
-            "website": "http://www.gekko-inc.com/",
-            "images": "images/gekko.webp"
+            "name": "NAVIGATE MARKETING, INC.",
+            "address": "1203 U.S. Hwy 2 W #1 Kalispell, MT 59901",
+            "phone": "406-471-4045",
+            "website": "https://www.navmarkads.com/",
+            "images": "images/navigate-logo.webp"
         },
         {
-            "name": "Wayne Enterprises",
-            "address": "14300 Hollister Street, Suite 100 Houston, Texas 77066",
-            "phone": "713-896-0300",
-            "website": "https://www.wayne-ent.com/more/locations.html",
-            "images": "images/wayne-industries.webp"
+            "name": "JENNIFER SHELLEY",
+            "address": "420 Electric Ave Bigfork, MT 59911",
+            "phone": "406-249-8929",
+            "website": "https://jennifershelley.purewestrealestate.com/",
+            "images": "images/pure-west.webp"
         },
         {
-            "name": "Cyberdyne Systems",
-            "address": "234 Renegade Ct, Henderson, Nevada, 89074",
-            "phone": "702-291-2004",
-            "website": "https://cyberdynetechsys.com/",
-            "images": "images/cyberdyne.webp"
+            "name": "H&R BLOCK- MISSOULA",
+            "address": "275 Corporate Dr Ste 300, Kalispell, MT 59901",
+            "phone": "406-752-8747",
+            "website": "https://www.hrblock.com/",
+            "images": "images/hrblock.webp"
         },
         {
             "name": "Genco Pura Olive Oil Company",
@@ -57,32 +57,32 @@
             "images": "images/genco-pura.webp"
         },
         {
-            "name": "Bubba Gump",
-            "address": "321 W Katella Ave, Suite 101, Anaheim, CA 92802",
-            "phone": "714-635-4867",
-            "website": "https://www.bubbagump.com/",
-            "images": "images/bubba-gump.webp"
+            "name": "EXPRESS EMPLOYMENT PROFESSIONALS",
+            "address": "4 Sunset Plaza, Suite 101, Kalispell, Montana 59901",
+            "phone": "406-257-2255",
+            "website": "https://www.expresspros.com/kalispellmt/",
+            "images": "images/express-logo.webp"
         },
         {
-            "name": "Duff Beer",
-            "address": "49 Production Plaza, North Hollywood, CA 91602",
-            "phone": "800-864-8377",
-            "website": "https://www.universalstudios-hollywood.com/",
-            "images": "images/duff-beer.webp"
+            "name": "CODESK LLC",
+            "address": "201 3rd Ave W Kalispell, MT 59901",
+            "phone": "406-602-3375",
+            "website": "http://www.yourcodesk.com/",
+            "images": "images/codesk.webp"
         },
         {
-            "name": "Olivia Pope & Associates",
-            "address": "1970 K. Street, Washington, D.C., 2006",
-            "phone": "313-890-0097",
-            "website": "https://scandal.fandom.com/wiki/",
-            "images": "images/olivia-pope.webp"
+            "name": "INSTY-PRINTS",
+            "address": "131 N Main St Kalispell, MT 59901",
+            "phone": "406-752-8812",
+            "website": "https://www.instyprints.com/locations/kalispell-mt",
+            "images": "images/intsy-prints.webp"
         },
         {
-            "name": "Krusty Krab",
-            "address": "807 Bedell Ave Woodbine, GA 31569",
-            "phone": "715-820-3420",
-            "website": "https://www.yelp.com/biz/krusty-krab-woodbine",
-            "images": "images/krusty-krab.webp"
+            "name": "SUPER 1 FOODS - CITY CENTER",
+            "address": "55 1st Ave E N Kalispell, MT 59901",
+            "phone": "406-755-3144",
+            "website": "https://www.super1foods.net/",
+            "images": "images/super-one.webp"
         }
     ]
 }

@@ -83,7 +83,7 @@ main > div {
 }
 .spotlight1 section, .spotlight2 section {
     margin-bottom: 2rem;
-    border-bottom: #666 solid 2px;
+    border-bottom: #666 solid 1px;
     padding: 1rem;
 }
 .spotlight1 section:last-child, .spotlight2 section:last-child {
@@ -92,16 +92,31 @@ main > div {
 .herodiv {
     margin: 10px auto;
     position: relative;
+    overflow: hidden;
 }
 div.herodiv section {
     position: absolute;
     top: 5%;
-	left: 5%;
-    right: 5%;
+	left: -600px;
+    right: 0;
     padding: 1.5rem;
     color: rgba(92, 7, 7, 0.788);
     background-color: rgba(255,255,255,.3);
+    -webkit-animation: slide 0.5s 
+    forwards;
+    -webkit-animation-delay: 1s;
+    animation: slide 1.5s forwards;
+    animation-delay: 1s;
 }
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
 main div button {
     color: #14213D;
     padding: .5rem;
