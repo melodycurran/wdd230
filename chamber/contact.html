@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Assignment Portal created by Melody Curran. For Web Frontend Development Class at Brigham Young University- Idaho">
+    <meta name="description" content="Contact page created by Melody Curran. For Web Frontend Development Class at Brigham Young University- Idaho">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,10 +15,9 @@
     <link rel="stylesheet" href="css/large.css">
     <link rel="shortcut icon" href="images/favicon.ico">
     
-    <title>Chamber of Commerce | Join The Chamber</title>
+    <title>Chamber of Commerce | Contact</title>
 </head>
 <body>
-
     <div id="top-page-banner">
         <div class="banner-content">
             🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
@@ -41,7 +40,7 @@
     
     
         <div id="now"></div>
-
+        
         <nav>
     
             <button id="hamburgerBtn"><span id="menu-btn">MENU </span>&#9776;</button>
@@ -51,23 +50,42 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Calendar</a></li>
             </ul>
                 
         </nav>
     </header>
 
+    <main id="contact">
 
-    <main id="thankyou">
+        <div class="form-container">
+            <div class="msg-confirmation"></div>
+            <form action="msg-confirmation.html" method="post">
+                <fieldset class="contact-field">
+                    <legend>Contact</legend>
+                
+                    <label class="cont-fields">First Name: <input type="text" name="fname" required></label>
+                    <label class="cont-fields">Last Name: <input type="text" name="lname" required></label>
+                    <label class="cont-fields">Organization: <input type="text" name="organization"></label>
+                    <label class="cont-fields">Title: <input type="text" name="title" required></label>
+                    <label class="cont-fields">Phone: <input type="tel" name="phone" required></label>
+                    <label class="cont-fields">E-mail: <input type="email" name="email" required></label>
+                    <label class="cont-fields">Message: <textarea placeholder="Type here" name="description"></textarea></label>
+                </fieldset>
+                <input type="submit" value="Send My Message" class="contactBtn">
+            </form>
+           
+        </div>
 
-        <h2>Your Application Has Been Submitted! <img src="images/checkmark-xxl.png" alt="checkmark" width="20"></h2>
-        <p>Thanks for applying! A member of our team will contact you to follow up with your submitted application.
-            <br>We look forward to meeting you!</p>
-      
+
+
+
+
 
     </main>
 
-  <footer>
+
+    <footer>
         <div class="footer-content">
             <div>
             <picture><img src="images/kalispell-chamber-of-commerce-logo.webp" alt="logo"></picture>
@@ -94,11 +112,9 @@
             
     
     </footer>
-    
+
+    <script src="js/msgConfirmation.js"></script>
     <script src="js/script.js"></script>
-    
 
-
-
-</body>
-</html>
+    </body>
+    </html>

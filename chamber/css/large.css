@@ -54,6 +54,9 @@
         box-shadow: none;
         background-color: #E5E5E5;
     }
+    .news-events p, .news-events h3 {
+        text-align: left;
+    }
     .spotlight1 {
         grid-column: 1;
         grid-row: 2;
@@ -63,6 +66,10 @@
     .spotlight2 {
         grid-column: 3;
         align-self: center;
+        margin: 1rem;
+    }
+    .spotlight1 section:last-child, .spotlight2 section:last-child {
+        border: none;
     }
     .join {
         grid-column: 2;
@@ -72,14 +79,17 @@
         top: 25%;
         left: 25%;
     }
+    .weatherInfo {
+        bottom: 30%;
+        padding: 0 0 0 1rem;
+    }
     /*--------Weather---------*/
     .weather {
         display: block;
         height: inherit;
     }
-    .weatherInfo, .weather figure {
+    .weather figure {
         position: static;
-        text-align: center;
     }
     #weatherIcon {
         width: 40%;
@@ -144,5 +154,20 @@
     .list-view section p {
         width: 15%;
     }
-   
+    /*---------Contact Page--------*/
+    #contact div.form-container {
+        width: 50%;
+        padding: 1.5rem 0;
+    }
+    .contact-field {
+        border: #D3D3D3 1px solid;
+        padding: 2rem;
+        border-radius: 10px;
+    }
+    .contactBtn {
+        margin: 1.5rem 2rem;
+    }
+    div.form-container form {
+        display: block;
+    }
 }

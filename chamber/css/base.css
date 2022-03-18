@@ -78,6 +78,9 @@ main#home-page {
 main > div {
     margin-top: 2rem;
 }
+div.join picture img{
+    padding: 1rem 0;
+}
 .news-events, .weather, .join, .spotlight1, .spotlight2 {
     text-align: center;
 }
@@ -86,8 +89,8 @@ main > div {
     border-bottom: #666 solid 1px;
     padding: 1rem;
 }
-.spotlight1 section:last-child, .spotlight2 section:last-child {
-    border: none;
+.spotlight1 section img, .spotlight2 section img {
+    padding: 1rem 0;
 }
 .herodiv {
     margin: 10px auto;
@@ -101,22 +104,35 @@ div.herodiv section {
     right: 0;
     padding: 1.5rem;
     color: rgba(92, 7, 7, 0.788);
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(255,255,255,.6);
     -webkit-animation: slide 0.5s 
     forwards;
     -webkit-animation-delay: 1s;
     animation: slide 1.5s forwards;
     animation-delay: 1s;
 }
-
 @-webkit-keyframes slide {
     100% { left: 0; }
 }
-
 @keyframes slide {
     100% { left: 0; }
 }
-
+.gold-members {
+    height: 40vh;
+    overflow: scroll;
+}
+.gold-members h2 {
+    background-color: #14213D;
+    color: white;
+    padding: 1rem 0;
+}
+.gold-members section a, .spotlight1 section a, .spotlight2 section a {
+    text-decoration: none;
+    color: #14213D;
+}
+.spotlight1 section a:hover, .spotlight2 section a:hover {
+    text-decoration: underline;
+}
 main div button {
     color: #14213D;
     padding: .5rem;
@@ -133,13 +149,15 @@ main div button:hover {
 }
 .weather {
     background-color: #E5E5E5; 
-    padding: 2rem;
 }
-main div.weather h2, h3, main div.news-events p, main div.join p,
+h3, main div.news-events p, main div.join p,
 .discover article h2, .discover article p {
     padding: 1rem;
 }
-.join, .news-events {
+main div.weather h2 {
+    padding: 10px;
+}
+.join {
     padding: 3rem;
     box-shadow: 0 0 10px #888;
 }
@@ -177,8 +195,8 @@ main div.weather h2, h3, main div.news-events p, main div.join p,
 }
 .weatherInfo {
     position: absolute;
-    right: 10%;
-    bottom: 25%;
+    right: 5%;
+    bottom: 10%;
     text-align: left;
 }
 .weather figure {
@@ -417,3 +435,34 @@ form label.top input:required:valid {
 .list-view section:last-child {
     margin-bottom: 3rem;
 }
+/*-----------Contact---------------*/
+label.cont-fields {
+    display: block;
+    padding: .50rem 0;
+    font-weight: bold;
+}
+label.cont-fields input {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    border: 1px solid #888;
+    padding: .50rem 0;
+}
+#contact div {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+.contactBtn {
+    margin: 1.5rem 0 1.5rem 1rem;
+    padding: .50rem;
+    background-color: #FCA311;
+    color: #14213D;
+    font-weight: bold;
+    border: none;
+}
+.contactBtn:hover {
+    background-color: #14213D;
+    color: #E5E5E5;
+}
+

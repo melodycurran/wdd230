@@ -77,4 +77,9 @@
     .grid-view {
         grid-template-columns: 1fr 1fr;
     }
+    /*------Contact Page-----------*/
+    #contact div {
+        width: 50%;
+        padding: 1.5rem 0;
+    }
 }
