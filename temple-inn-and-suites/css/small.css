@@ -244,3 +244,12 @@ main h2 {
 .templeCards {
     text-align: center;
 }
+/*========== Reservation ============*/
+#reservation-form form label {
+    display: block;
+    padding: 1rem;
+}
+form label input {
+    display: block;
+    margin-top: .5rem;
+}
