@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Temple Inn and Suites website for Final project at WDD 230 class">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cookie&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Temple Inn and Suites | Homepage</title>
+</head>
+<body>
+
+    <div class="pop-up">
+        <div class="weather-alert">
+            <span class="xBtn">&times;</span>
+        </div>
+    </div>
+
+    <div id="container">
+        
+        <nav>
+            <div class="navDiv">
+                <button id="burgerBtn">&#9776;</button>
+                <div id="current-date"></div>
+                
+                <h1>Temple Inn & Suites</h1>
+               
+                <picture><img class="social-media" src="images/fb-icon.webp" width="30"></picture>
+                <picture><img class="social-media" src="images/yt-icon.webp" width="30"></picture>
+           
+            </div>
+
+            <div class="current-weather">
+            </div>
+
+            <ul id="mainNav">
+                <li><a href="#"></a>Home</li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="#"></a>Reservation</li>
+                <li><a href="#"></a>Services</li>
+                <li><a href="#"></a>Reception</li>
+                <li><a href="#"></a>Full-Time Missionary</li>
+            </ul>
+        </nav>
+
+        <header id="herodiv">
+            <picture class="hero-img">
+                <source media="(min-width: 800px)" srcset="images/hero-img-large.webp">
+                <source media="(min-width: 390px)" srcset="images/hero-img-medium.webp">
+                <img src="images/hero-img-small.webp" class="heroSlides fade">
+            </picture>
+        </header>
+         
+        <main>
+            <div id="choose-date">
+                <label>Check-in Date: <input type="date" name="choose-date"></label>
+                <label>Check-out Date: <input type="date" name="choose-date"></label>
+                <i class="fa fa-arrow-circle-o-right"></i>
+            </div>
+
+            <h2>
+                Sealings, Weddings, Receptions and Temple trips? <br> We got you, Fam!
+            </h2>
+            
+            <div class="spotlight">
+                <img src="images/patrons.webp">
+                <section>
+                    <p>Free Access To Changing Rooms</p>
+                    <p>Playroom and Low-cost Baby-sitting Service</p>
+                    <p>Wedding Reception</p>
+                    <p>Family Search Center</p>
+                </section>
+            </div>
+
+            <div class="missionary-deal">
+                <img src="images/missionaries.webp">
+                <section>
+                    <p>Long-term stay in kitchenette suites for full-time Missionaries</p>
+                    <button>Check Deals</button>
+                </section>
+            </div>
+
+            <div class="weather-card">
+                <h2>3-Day Weather Forecast</h2>
+                <div class="weather-forecast">
+                </div>
+            </div>
+
+            <div class="explore-temple">
+                <picture>
+                    <img src="images/explore-temple.webp">
+                </picture>
+                <h2>There are over 200 temples all over the globe!</h2>
+                <button>Explore Them</button>
+                <img src="images/temple.webp">
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="logo-container">
+                <picture>
+                    <img src="images/temple-inn-logo.webp" class="footerImg">
+                </picture>
+            </div>
+
+            <div class="footerContainer">
+                <section class="footerContent">
+                    <a class="contactLink" href="#"><p>Contact Us</p></a><hr>
+                    <p>Headquarter: 4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+                    <span>View Map: </span><span class="material-icons-outlined">pin_drop</span><hr>
+                </section>
+
+                
+                <div class="social-media-footer">
+                    <picture><img class="social-media" src="images/fb-icon.webp"></picture>
+                    <picture><img class="social-media" src="images/yt-icon.webp"></picture>
+                </div>
+
+            </div>
+
+            <p class="lastModified">Last Modified: <span id="lastModified"></span></p>
+
+
+        </footer>
+
+    </div>
+
+<script src="js/header.js"></script>
+<script src="js/weather.js"></script>
+<script src="js/lastModified.js"></script>
+</body>
+</html>

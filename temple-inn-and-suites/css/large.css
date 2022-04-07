@@ -1,0 +1,43 @@
+@media only screen and (min-width: 1020px) {
+    #container {
+        width: 960px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #burgerBtn {
+        display: none;
+    }
+    ul#mainNav {
+        display: flex;
+    }
+    ul#mainNav li {
+        flex: 1 1 auto;
+        border: none;
+        margin: 1rem 0;
+        text-align: center;
+    }
+    p, #current-date {
+        font-size: 1rem;
+    }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    #current-date {
+        grid-column: 1/2;
+    }
+    .social-media {
+        grid-column: 3/4;
+    }
+    .hero-img, main, footer, header, nav {
+        grid-column: 1 / span 3;
+    }
+    .navDiv {
+        grid-template-columns: 1fr 1fr 60% 1fr 1fr;
+    }
+    .navDiv h1 {
+        grid-column: 1;
+    }
+    .logo-container {
+        height: 40vh;
+    }
+}

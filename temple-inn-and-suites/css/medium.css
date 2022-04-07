@@ -1,0 +1,36 @@
+@media only screen and (min-width: 640px) {
+    nav, #current-date, #burgerBtn, #mainNav li, h2, p, span, button {
+        font-size: 2rem;
+    }
+    #current-date {
+        align-self: center;
+    }
+    .social-media {
+        width: 30px;;
+    }
+    nav div {
+        padding: 0 1rem 0 1rem;
+        margin: 0 auto;
+    }
+    nav {
+        padding: 3rem 1rem 0;
+    }
+    .current-weather section img {
+        width: 90px;
+    } 
+    .current-weather section img, .current-weather section p {
+        padding-bottom: 2rem;
+    }
+    .spotlight img, .missionary-deal img {
+        width: 100%;
+    }
+    .spotlight section, .missionary-deal section {
+        right: 10%;
+    }
+    .explore-temple picture img {
+        width: 200px;
+    }
+    .explore-temple img {
+        width: 100%;
+    }
+}
