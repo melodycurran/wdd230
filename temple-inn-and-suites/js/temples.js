@@ -1,4 +1,4 @@
-const requestURL = 'js/temples.json';
+const requestURL = 'https://melodycurran.github.io/wdd230/temple-inn-and-suites/js/temples.json';
 const cards = document.querySelector('.templeCards');
 
 fetch(requestURL)
@@ -9,33 +9,22 @@ fetch(requestURL)
     console.table(jsonObject);  // temporary checking for valid response and data parsing
 
     const temples = jsonObject['temples'];
-    temples.forEach(displayProphets);
+    temples.forEach(displayTemples);
   });
 
-function displayProphets(temple) {
+function displayTemples(temple) {
   // Create elements to add to the document
   let card = document.createElement('section');
   let h2 = document.createElement('h2');
   let location = document.createElement('p');
   let dedicate = document.createElement('p');
-  let hrline = document.createElement('hr')
   let portrait = document.createElement('img');
-  //let order = ``
 
-//   if (prophet.order == 1) {
-//     order = `${prophet.order}st`
-//   } else if (prophet.order == 2) {
-//     order = `${prophet.order}nd`
-//   } else if (prophet.order == 3) {
-//     order = `${prophet.order}rd`
-//   } else {
-//     order = `${prophet.order}th`
-//   }
 
   // Change the textContent property of the h2 element to contain the prophet's full name
   h2.textContent = `${temple.templeName}`
   location.textContent = `${temple.location}`
-  dedicate.textContent = `${temple.dedicate}`
+  dedicate.textContent = `${temple.dedicated}`
 
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
   portrait.setAttribute('src', temple.imageUrl);
@@ -46,7 +35,6 @@ function displayProphets(temple) {
   card.appendChild(h2);
   card.appendChild(location);
   card.appendChild(dedicate);
-  card.appendChild(hrline);
   card.appendChild(portrait);
   
   // Add/append the existing HTML div with the cards class with the section(card)
