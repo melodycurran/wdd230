@@ -37,7 +37,7 @@
     .navDiv h1 {
         grid-column: 1;
     }
-    .logo-container {
-        height: 40vh;
+    .logo-container picture img {
+        width: 20%;
     }
 }

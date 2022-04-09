@@ -152,7 +152,7 @@ main h2 {
     padding: .5rem 2rem;
     background-color: rgba(255, 255, 255, .7);
 }
-.missionary-deal section button, .explore-temple button {
+.missionary-deal section button, .explore-temple button, .submitBtn {
     background-color: transparent;
     padding: .5rem;
     border: 1.5px black solid;
@@ -160,7 +160,7 @@ main h2 {
     font-weight: bold;
     margin-top: 1rem;
 }
-.missionary-deal section button:hover {
+.missionary-deal section button:hover, .submitBtn:hover {
     background-color: gray;
 }
 /*=========== Weather Forecast =========*/
@@ -252,4 +252,17 @@ main h2 {
 form label input {
     display: block;
     margin-top: .5rem;
+}
+.top input, .top textarea {
+    padding: .5rem;
+    width: 80%;
+}
+.submitBtn {
+    margin-left: 5%;
+}
+/*======== Confirmation ======*/
+#thankyou {
+    height: 50vh;
+    max-height: 100vh;
+    text-align: center;
 }
